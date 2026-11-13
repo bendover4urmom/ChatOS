@@ -1,0 +1,3 @@
+plugins { id 'com.android.application' }
+android { namespace 'com.chatos.launcher'; compileSdk 34
+ defaultConfig { applicationId 'com.chatos.launcher'; minSdk 23; targetSdk 28; versionCode 1; versionName '0.1' } }
