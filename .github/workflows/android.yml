@@ -15,6 +15,8 @@ jobs:
         with:
           gradle-version: '8.2.1'
       - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
       - run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
       - run: gradle :app:assembleDebug
       - uses: actions/upload-artifact@v4
